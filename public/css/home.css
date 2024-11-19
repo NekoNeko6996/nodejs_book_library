@@ -1,0 +1,33 @@
+table, th, td {
+    border: 1px solid;
+    font-size: 30px;
+}
+body {
+    background-color: lightblue;
+}
+h1 {
+    border: 2px #eee solid;
+    color: brown;
+    text-align: center;
+    padding: 10px;
+}
+.center-image {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    height: auto; 
+}
+.container {
+    height: 75%;
+    overflow: hidden;
+}
+.right {
+    width: 800px;
+    float: right;
+    margin-top: 100px;
+}
+.left {
+    margin-top: 125px;
+    width: auto;
+    overflow: hidden;
+}

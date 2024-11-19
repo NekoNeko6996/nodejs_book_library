@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/bookstyle.css">
+    <title>List of Books</title>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="column1">
+                <h1>List of Books</h1>
+                <table class="center">
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Book </th>
+                        <th>Author </th>
+                        <th>Price</th>
+                        <th>Age Group</th>
+                        <th>Book Type</th>
+                    </tr>
+                    <% books.forEach(function(book) { %>
+                    <tr>
+                        <td><%= book.Book_id %></td> 
+                        <td><%= book.Book_name %></td>
+                        <td><%= book.Author_name %></td>
+                        <td><%= book.Price %></td> 
+                        <td> <%= book.Age_group %></td> 
+                        <td> <%= book.Book_type %></td> 
+                    </tr>
+                    <% }); %>
+                </table>
+            </div>
+        </div> 
+    </div>
+        <p><a href="/logout">Logout</a></p>
+</body>
+</html>

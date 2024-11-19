@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-columns: 100px 150px 200px;
+    text-align: center;
+}
+.column1 {
+    float: left;
+    width: 90%;
+    padding: 10px;
+    height: auto; 
+    background-color: lightblue;
+}
+body {
+    background-color: grey;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+}
+.center {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+h2 {
+    border: 2px #eee solid;
+    color: Red;
+    text-align: center;
+    padding: 10px;
+}

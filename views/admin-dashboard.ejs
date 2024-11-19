@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/admindash.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/admin-dashboard/add-book" method="post">
+            <table> 
+                <tr>
+                    <td><img src="/images/book1.jpg" alt="Image 1" class="left-image"></td>
+                    <td><h1>Create Book Detail</h1></td>
+                </tr>
+                <tr>
+                    <td><label for="Book_id">BookID:</label></td>
+                    <td><input type="number" name="Book_id" required autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label for="Book_name">Book Name:</label></td>
+                    <td><input type="text" name="Book_name" required autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label for="Author_name">Author Name:</label></td>
+                    <td><input type="text" name="Author_name" required autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label for="Price">Price:</label></td>
+                    <td><input type="text" name="Price" required autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label for="Age_group">Age Group:</label></td>
+                    <td><input type="text" name="Age_group" required autocomplete="off"></td>
+                </tr>
+                <tr>
+                    <td><label for="Book_type">Book Type:</label></td>
+                    <td><input type="text" name="Book_type" required autocomplete="off"></td>
+                </tr>
+            </table>
+            <div class="center-button-container">
+                <button class="center-button" type="submit">Add Book</button>
+            </div>
+        </form>
+    </div>
+    <p><a href="/logout">Logout</a></p>
+</body>
+</html>
